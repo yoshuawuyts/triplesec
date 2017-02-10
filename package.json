@@ -12,7 +12,9 @@
   },
   "scripts": {
     "test": "make test",
-    "build": "make"
+    "build": "make",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "main": "lib/main",
   "devDependencies": {
@@ -32,7 +34,8 @@
     "more-entropy": "~0.0.2",
     "iced-coffee-script": "~1.7.1",
     "iced-error": "~0.0.6",
-    "progress": "~1.1.2"
+    "progress": "~1.1.2",
+    "snyk": "^1.25.0"
   },
   "author": "keybase",
   "licenses": [
@@ -40,5 +43,6 @@
       "type": "MIT",
       "url": "http://www.opensource.org/licenses/mit-license.php"
     }
-  ]
+  ],
+  "snyk": true
 }
